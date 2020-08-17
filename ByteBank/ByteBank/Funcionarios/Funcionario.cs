@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace ByteBank.Funcionarios
+﻿namespace ByteBank.Funcionarios
 {
-    public class Funcionario
+    public abstract class Funcionario
     {
         public static int TotalDeFuncionarios { get; private set; }
 
@@ -12,8 +10,6 @@ namespace ByteBank.Funcionarios
 
         public Funcionario(double salario, string cpf)
         {
-            Console.WriteLine("Criando FUNCIONARIO");
-
             CPF = cpf;
             Salario = salario;
             
